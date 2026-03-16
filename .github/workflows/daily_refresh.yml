@@ -26,6 +26,7 @@ jobs:
 
       - name: Run daily refresh
         env:
+          PYTHONUNBUFFERED: '1'
           SUPABASE_DATABASE_URL: ${{ secrets.SUPABASE_DATABASE_URL }}
           SPACETRACK_USER: ${{ secrets.SPACETRACK_USER }}
           SPACETRACK_PASSWORD: ${{ secrets.SPACETRACK_PASSWORD }}
