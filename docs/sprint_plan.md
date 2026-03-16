@@ -129,6 +129,7 @@ Upcoming launch tracking is the most significant data gap and should be prioriti
 | FAA/AST license filings | Signal that a launch is approved (but not when or what payload) | Only useful as a supplementary signal alongside other upcoming launch sources |
 | SEC filings | Financial data on public operators | Investor persona demands company-level financial context |
 | FCC IBFS | US spectrum licensing, earth station permits | Users need US-specific regulatory coverage |
+| SGP4 propagation | Real-time position/velocity and classical orbital elements per satellite | Enough API interest in "where is this satellite now?" queries to justify the compute |
 
 ---
 

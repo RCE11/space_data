@@ -178,14 +178,14 @@ Initial ingestion scripts did per-row database queries — fast locally but unac
 
 | Table | Records | Notes |
 |---|---|---|
-| `satellites` | 29,673 | All active tracked objects |
+| `satellites` | 29,730 | All active tracked objects (29,673 initial + 112 new from first daily refresh) |
 | `operators` | 544 | 103 country codes + 441 real company names from UCS |
-| `orbits` | 29,673 | Full TLE + derived orbit class |
-| `launches` | 3,500 | Historical launches derived from SATCAT |
+| `orbits` | 29,730 | Full TLE + derived orbit class |
+| `launches` | 3,500+ | Historical launches derived from SATCAT |
 
 Enrichment coverage:
 - 5,392 satellites have purpose data (from UCS)
-- 26,675 satellites linked to launch events
+- 26,750+ satellites linked to launch events
 - 441 operators with real company names (from UCS), remainder are country codes — target for Phase C manual enrichment
 
 ---
@@ -209,8 +209,8 @@ Enrichment coverage:
 
 ## Remaining Work
 
-- [ ] Push repo to GitHub and configure Actions secrets (`SUPABASE_DATABASE_URL`, `SPACETRACK_USER`, `SPACETRACK_PASSWORD`)
-- [ ] Verify first automated daily refresh runs successfully
+- [x] Push repo to GitHub and configure Actions secrets (`SUPABASE_DATABASE_URL`, `SPACETRACK_USER`, `SPACETRACK_PASSWORD`) — completed 2026-03-16
+- [x] Verify first automated daily refresh runs successfully — completed 2026-03-16 (manually triggered, ran ~30 min, ingested 112 new satellites)
 - [ ] Gate check: can we answer "What is launching in the next 90 days, and who operates those satellites?"
 
 ### Gate Assessment
