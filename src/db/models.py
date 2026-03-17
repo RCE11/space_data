@@ -96,3 +96,14 @@ class Orbit(Base):
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     satellite = relationship("Satellite", back_populates="orbit")
+
+
+class ApiKey(Base):
+    __tablename__ = "api_keys"
+
+    id = Column(Integer, primary_key=True)
+    key = Column(String(64), nullable=False, unique=True, index=True)
+    owner = Column(String(255), nullable=False)
+    tier = Column(String(50), nullable=False, default="free")  # free, individual, team
+    is_active = Column(Boolean, nullable=False, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)

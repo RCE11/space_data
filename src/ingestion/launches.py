@@ -42,8 +42,6 @@ def fetch_launch_data(client: SpaceTrackClient) -> dict[str, dict]:
     print("Fetching SATCAT for launch derivation...")
     records = client.query(
         "satcat",
-        CURRENT="Y",
-        DECAY="null-val",
         LAUNCH_PIECE="A",  # primary payload only — one per launch
         orderby="LAUNCH desc",
         predicates="OBJECT_ID,SATNAME,LAUNCH,SITE,COUNTRY",
