@@ -182,6 +182,30 @@ Enrichment coverage:
 - [x] New API endpoint: `GET /satellites/by-constellation`
 - [x] Added `constellation` filter to `/satellites/by-operator` and `/satellites/by-orbit`
 
+### Purpose/Mission Enrichment: Constellation-Based Mapping
+
+**Problem:** Only ~5,400 payloads (32%) had purpose/mission classification data, all from the stale UCS dataset. Mission classification (EO, satcom, navigation, ISR, etc.) is a key pain point for analysts who otherwise have to classify manually.
+
+**Approach:** Since constellation tagging already covers ~12,500 payloads, map constellation → purpose using the same categories UCS established. Same lightweight pattern as `constellations.py`: fetch tagged payloads, skip those with existing purpose, batch update.
+
+**Implementation:** `src/ingestion/purposes.py`
+
+- 38 constellation-to-purpose mappings across 6 categories: Communications, Navigation/Global Positioning, Earth Observation, Surveillance, Communications/IoT, Meteorological
+- Preserves existing UCS purpose values — only fills in gaps
+- Batch updates in groups of 500
+
+**Result:** 3,795 satellites newly tagged. Combined with 8,744 existing UCS values, total purpose coverage: ~12,539 payloads (74%, up from 32%).
+
+---
+
+### Fly.io Deploy Fix: Depot Builder Timeout
+
+**Problem (2026-03-30):** Fly.io deploys via GitHub Actions began consistently failing with `context deadline exceeded` errors. The `--remote-only` flag sends builds to Depot (Fly's remote Docker build service), which was timing out before completing the build.
+
+**Fix:** Switched `.github/workflows/fly-deploy.yml` from `--remote-only` to `--local-only`. This builds the Docker image on the GitHub Actions runner and pushes directly to Fly's registry, bypassing Depot entirely. No practical downside for our lightweight Dockerfile (python:3.12-slim + pip install).
+
+---
+
 ## Remaining Work
 
 - [ ] Upcoming launch data — curated ingestion pipeline for scheduled launches (Phase C priority gap from Phase A)
