@@ -134,8 +134,10 @@ def ingest_satellite_catalog(client: SpaceTrackClient):
 
     # Cache operators to avoid repeated queries
     operator_cache = {}
+    operator_by_id = {}
     for op in db.execute(select(Operator)).scalars().all():
         operator_cache[op.name] = op
+        operator_by_id[op.id] = op
 
     # Cache existing satellites by norad_id
     satellite_cache = {}
@@ -182,7 +184,10 @@ def ingest_satellite_catalog(client: SpaceTrackClient):
             if satellite:
                 satellite.name = rec.get("OBJECT_NAME", satellite.name)
                 satellite.intl_designator = rec.get("INTLDES", satellite.intl_designator)
-                satellite.operator_id = operator.id
+                # Preserve real operator assignments (from UCS or consolidation)
+                current_op = operator_by_id.get(satellite.operator_id)
+                if not current_op or current_op.operator_type is None:
+                    satellite.operator_id = operator.id
                 satellite.object_type = object_type
                 satellite.status = "active"
                 satellite.updated_at = datetime.now(tz=None)

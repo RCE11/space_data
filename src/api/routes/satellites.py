@@ -13,6 +13,7 @@ router = APIRouter()
 def get_satellites_by_operator(
     operator: str = Query(description="Operator name (partial match)"),
     object_type: str | None = Query(default=None, description="PAYLOAD, DEBRIS, ROCKET BODY, or UNKNOWN"),
+    constellation: str | None = Query(default=None, description="Filter by constellation name (partial match)"),
     limit: int = Query(default=50, ge=1, le=200),
     offset: int = Query(default=0, ge=0),
     db: Session = Depends(get_db),
@@ -25,6 +26,8 @@ def get_satellites_by_operator(
     )
     if object_type is not None:
         base = base.filter(Satellite.object_type == object_type.upper())
+    if constellation is not None:
+        base = base.filter(Satellite.constellation.ilike(f"%{constellation}%"))
     total = base.count()
     results = (
         base.options(joinedload(Satellite.operator), joinedload(Satellite.orbit))
@@ -46,6 +49,7 @@ def get_satellites_by_orbit(
     orbit_class: str = Query(description="Orbit classification: LEO, MEO, GEO, HEO, or SSO"),
     operator: str | None = Query(default=None, description="Filter by operator name (partial match)"),
     object_type: str | None = Query(default=None, description="PAYLOAD, DEBRIS, ROCKET BODY, or UNKNOWN"),
+    constellation: str | None = Query(default=None, description="Filter by constellation name (partial match)"),
     limit: int = Query(default=50, ge=1, le=200),
     offset: int = Query(default=0, ge=0),
     db: Session = Depends(get_db),
@@ -55,6 +59,42 @@ def get_satellites_by_orbit(
         db.query(Satellite)
         .join(Satellite.orbit)
         .filter(Orbit.orbit_class == orbit_class.upper())
+    )
+    if operator is not None:
+        base = base.join(Satellite.operator).filter(Operator.name.ilike(f"%{operator}%"))
+    if object_type is not None:
+        base = base.filter(Satellite.object_type == object_type.upper())
+    if constellation is not None:
+        base = base.filter(Satellite.constellation.ilike(f"%{constellation}%"))
+    total = base.count()
+    results = (
+        base.options(joinedload(Satellite.operator), joinedload(Satellite.orbit))
+        .order_by(Satellite.name.asc())
+        .offset(offset)
+        .limit(limit)
+        .all()
+    )
+    return PaginatedSatellites(
+        total=total,
+        limit=limit,
+        offset=offset,
+        results=[SatelliteResponse.model_validate(r) for r in results],
+    )
+
+
+@router.get("/by-constellation", response_model=PaginatedSatellites)
+def get_satellites_by_constellation(
+    constellation: str = Query(description="Constellation name (partial match, e.g. 'Starlink', 'OneWeb')"),
+    operator: str | None = Query(default=None, description="Filter by operator name (partial match)"),
+    object_type: str | None = Query(default=None, description="PAYLOAD, DEBRIS, ROCKET BODY, or UNKNOWN"),
+    limit: int = Query(default=50, ge=1, le=200),
+    offset: int = Query(default=0, ge=0),
+    db: Session = Depends(get_db),
+    _api_key=Depends(rate_limit),
+):
+    base = (
+        db.query(Satellite)
+        .filter(Satellite.constellation.ilike(f"%{constellation}%"))
     )
     if operator is not None:
         base = base.join(Satellite.operator).filter(Operator.name.ilike(f"%{operator}%"))
