@@ -181,6 +181,10 @@ Enrichment coverage:
 - [x] Admin CLI — stats, search, key management, operator/constellation editing, flagging (`src/admin.py`)
 - [x] New API endpoint: `GET /satellites/by-constellation`
 - [x] Added `constellation` filter to `/satellites/by-operator` and `/satellites/by-orbit`
+- [x] Purpose/mission enrichment — 3,795 satellites newly tagged, total coverage from 32% to 74% (`src/ingestion/purposes.py`)
+- [x] Upcoming launch pipeline — 156 curated launches from Spaceflight Now + NextSpaceFlight (`src/ingestion/upcoming.py`)
+- [x] Added `launch_window` column to launches table (Alembic migration)
+- [x] Fly.io deploy fix — switched from `--remote-only` to `--local-only` to bypass Depot timeout
 
 ### Purpose/Mission Enrichment: Constellation-Based Mapping
 
@@ -206,11 +210,51 @@ Enrichment coverage:
 
 ---
 
+### Upcoming Launch Data: Curated Ingestion Pipeline
+
+**Problem:** `/launches/upcoming` returned 0 results — no scheduled launch data existed. Phase A's SATCAT-derived launches are all historical. Analysts and investors need forward-looking data.
+
+**Approach:** Curated JSON dataset compiled from Spaceflight Now and NextSpaceFlight, loaded via a dedicated ingestion script. We chose a single curated dataset over multiple automated pipelines because upcoming launches have no universal key (like NORAD ID) for cross-source deduplication, and editorial judgment is needed for payload descriptions and date uncertainty.
+
+**Implementation:**
+
+- `data/upcoming_launches.json` — 156 curated launch entries covering March 2026 through 2028
+- `src/ingestion/upcoming.py` — loader script using same upsert pattern as other ingestion modules
+
+Each entry includes:
+- `launch_date` — ISO datetime when known, `null` when only a year/quarter is available
+- `vehicle` — rocket name (Falcon 9, Vulcan Centaur, New Glenn, etc.)
+- `launch_site` — pad and facility name
+- `operator` — company or agency responsible for the mission
+- `payload_description` — human-readable mission summary
+- `launch_window` — date certainty context ("Window opens at 2115 UTC", "No earlier than Q3 2026", "Date confirmed, time TBD", "TBD")
+- `source_id` — unique identifier for upsert deduplication
+
+**Key design decisions:**
+- `launch_window` field (new column, added via Alembic migration) captures date uncertainty that `launch_date` alone cannot express. "No earlier than" is spelled out for non-technical readability.
+- Entries with no known date use `launch_date: null` with the uncertainty expressed in `launch_window`.
+- Source is set to `spaceflight_now` with a unique `source_id` per entry. Safe to re-run — updates existing entries and creates new ones.
+- Operators are auto-created if they don't exist in the database.
+
+**Data sources:**
+- Spaceflight Now — near-term launches with specific dates and windows
+- NextSpaceFlight — broader coverage including government/military and international missions with longer time horizons
+
+**Result:** 156 scheduled launches across 60+ operators. Coverage spans commercial (Starlink, Kuiper, OneWeb), government (NASA, ESA, ISRO, JAXA), military (NRO, US Space Force, SDA), and international (CASC, Roscosmos, Space Pioneer) missions.
+
+---
+
 ## Remaining Work
 
-- [ ] Upcoming launch data — curated ingestion pipeline for scheduled launches (Phase C priority gap from Phase A)
+- [x] ~~Upcoming launch data — curated ingestion pipeline for scheduled launches~~
 - [ ] Gate check: can a non-technical user look at API output and immediately understand it without cross-referencing?
 
 ### Gate Assessment
 
-Pending. Constellation and operator enrichment significantly improve readability — API responses now show "SpaceX" instead of "US", "Starlink" instead of blank. The admin CLI enables rapid data corrections. The main gap is upcoming launches: `/launches/upcoming` still returns 0 results because no scheduled launch data source has been implemented yet.
+Pending final review. All enrichment layers are now in place:
+- API responses show "SpaceX" instead of "US", "Starlink" instead of blank
+- 74% of payloads have constellation tags, operator names, and mission classifications
+- 156 upcoming launches with human-readable payload descriptions and date context
+- The admin CLI enables rapid data corrections for edge cases
+
+The main question is whether the current output meets the bar for a non-technical user (investor, analyst) to understand without cross-referencing.

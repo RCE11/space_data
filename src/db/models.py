@@ -43,6 +43,7 @@ class Launch(Base):
     operator_id = Column(Integer, ForeignKey("operators.id"))
     status = Column(String(50))  # scheduled, launched, failed, scrubbed
     payload_description = Column(Text)
+    launch_window = Column(String(255))  # "Window opens at 2115 UTC", "TBD", etc.
     source = Column(String(100))  # space_track, faa, manual
     source_id = Column(String(255))  # ID from the original source
     created_at = Column(DateTime, default=datetime.utcnow)

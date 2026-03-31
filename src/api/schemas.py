@@ -18,6 +18,7 @@ class LaunchResponse(BaseModel):
     vehicle: str | None
     status: str | None
     payload_description: str | None
+    launch_window: str | None
     operator: OperatorSummary | None
 
     model_config = {"from_attributes": True}

@@ -1,0 +1,1406 @@
+[
+  {
+    "launch_date": "2026-03-30T21:15:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "SpaceX",
+    "payload_description": "Starlink 10-44 (29 Starlink V2 Mini satellites)",
+    "launch_window": "Window opens at 2115 UTC",
+    "source_id": "sfn-2026-03-30-starlink-10-44"
+  },
+  {
+    "launch_date": "2026-04-01T02:00:00",
+    "vehicle": "Soyuz 2.1a/Fregat-M",
+    "launch_site": "Plesetsk Cosmodrome, Russia",
+    "operator": "Russian Aerospace Forces (VKS)",
+    "payload_description": "Meridian-M n\u00b021L \u2014 military/civil telecommunications satellite for Arctic communications",
+    "launch_window": "Window opens at 0200 UTC, closes at 1200 UTC",
+    "source_id": "nsf-2026-04-01-meridian-m-21l"
+  },
+  {
+    "launch_date": "2026-04-01T22:24:00",
+    "vehicle": "Space Launch System",
+    "launch_site": "Launch Complex 39B, Kennedy Space Center, Florida",
+    "operator": "NASA",
+    "payload_description": "Artemis 2 \u2014 first crewed Orion lunar flyby mission (4 astronauts) + 4 CubeSat secondary payloads",
+    "launch_window": "Window opens at 2224 UTC, closes at 0024 UTC",
+    "source_id": "sfn-2026-04-01-artemis-2"
+  },
+  {
+    "launch_date": "2026-04-02T03:52:00",
+    "vehicle": "Tianlong-3",
+    "launch_site": "Jiuquan Satellite Launch Center, China",
+    "operator": "Space Pioneer",
+    "payload_description": "Demo flight \u2014 first launch of Tianlong-3 rocket, may carry Qianfan (G60) constellation satellites",
+    "launch_window": "Window opens at 0352 UTC, closes at 0609 UTC",
+    "source_id": "nsf-2026-04-02-tianlong-3-demo"
+  },
+  {
+    "launch_date": "2026-04-02T11:52:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "SpaceX",
+    "payload_description": "Starlink 10-58 (29 Starlink V2 Mini satellites)",
+    "launch_window": "Window opens at 1152 UTC, closes at 1552 UTC",
+    "source_id": "sfn-2026-04-02-starlink-10-58"
+  },
+  {
+    "launch_date": "2026-04-02T23:03:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "SpaceX",
+    "payload_description": "Starlink 17-35 (25 Starlink V2 Mini satellites)",
+    "launch_window": "Window opens at 2303 UTC, closes at 0303 UTC",
+    "source_id": "sfn-2026-04-02-starlink-17-35"
+  },
+  {
+    "launch_date": "2026-04-04T05:45:00",
+    "vehicle": "Atlas V 551",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LA-05) \u2014 29 Kuiper broadband internet satellites",
+    "launch_window": "Window opens at 0545 UTC, closes at 0614 UTC",
+    "source_id": "sfn-2026-04-04-amazon-leo-5"
+  },
+  {
+    "launch_date": "2026-04-04T11:00:00",
+    "vehicle": "Soyuz 5",
+    "launch_site": "Site 45/1, Baikonur Cosmodrome, Kazakhstan",
+    "operator": "Roscosmos",
+    "payload_description": "Demo flight \u2014 first launch of Soyuz 5 rocket with mass simulator (suborbital)",
+    "launch_window": "Window opens at 1100 UTC",
+    "source_id": "nsf-2026-04-04-soyuz-5-demo"
+  },
+  {
+    "launch_date": "2026-04-07T02:39:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "SpaceX",
+    "payload_description": "Starlink 17-21 (25 Starlink V2 Mini satellites)",
+    "launch_window": "Window opens at 0239 UTC, closes at 0639 UTC",
+    "source_id": "sfn-2026-04-07-starlink-17-21"
+  },
+  {
+    "launch_date": "2026-04-07T13:00:00",
+    "vehicle": "Long March 8",
+    "launch_site": "Commercial LC-1, Wenchang Space Launch Site, China",
+    "operator": "CASC",
+    "payload_description": "Unknown payload \u2014 likely SpaceSail/Qianfan polar LEO communication satellites",
+    "launch_window": "Window opens at 1300 UTC, closes at 1530 UTC",
+    "source_id": "nsf-2026-04-07-long-march-8"
+  },
+  {
+    "launch_date": "2026-04-07T00:00:00",
+    "vehicle": "Minotaur IV",
+    "launch_site": "SLC-8, Vandenberg Space Force Base, California",
+    "operator": "US Space Force",
+    "payload_description": "STP-S29A \u2014 STPSat-7 DoD research satellite + 9 CubeSat rideshares",
+    "launch_window": "No earlier than April 7, time TBD",
+    "source_id": "nsf-2026-04-07-stp-s29a"
+  },
+  {
+    "launch_date": "2026-04-08T12:51:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "Northrop Grumman",
+    "payload_description": "NG-24 Cygnus cargo resupply mission to the ISS (S.S. Steven R. Nagel)",
+    "launch_window": "No earlier than April 8, window opens at 1251 UTC",
+    "source_id": "sfn-2026-04-08-ng-24"
+  },
+  {
+    "launch_date": "2026-04-09T06:29:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "ESA",
+    "payload_description": "SMILE \u2014 Solar wind Magnetosphere Ionosphere Link Explorer (ESA/CAS)",
+    "launch_window": "No earlier than April 9, window opens at 0629 UTC",
+    "source_id": "sfn-2026-04-09-smile"
+  },
+  {
+    "launch_date": "2026-04-10T00:00:00",
+    "vehicle": "New Glenn",
+    "launch_site": "Launch Complex 36, Cape Canaveral Space Force Station, Florida",
+    "operator": "AST SpaceMobile",
+    "payload_description": "BlueBird 7 \u2014 space-based cellular broadband satellite (first New Glenn booster reflight)",
+    "launch_window": "No earlier than April 10, time TBD",
+    "source_id": "sfn-2026-04-10-bluebird-7"
+  },
+  {
+    "launch_date": "2026-04-15T00:00:00",
+    "vehicle": "Spectrum",
+    "launch_site": "Orbital Launch Pad, Andoya Spaceport, Norway",
+    "operator": "Isar Aerospace",
+    "payload_description": "Onward and Upward \u2014 second Spectrum test flight with 6 payloads (ESA Boost! program)",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "sfn-2026-tbd-spectrum-2"
+  },
+  {
+    "launch_date": "2026-04-23T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Rocket Lab",
+    "payload_description": "Kakushin Rising \u2014 8 Japanese university/research CubeSats (technology demonstration, Earth observation, space science)",
+    "launch_window": "No earlier than April 23, time TBD",
+    "source_id": "nsf-2026-04-23-kakushin-rising"
+  },
+  {
+    "launch_date": "2026-04-24T00:00:00",
+    "vehicle": "Atlas V 551",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LA-06) \u2014 29 Kuiper broadband internet satellites",
+    "launch_window": "No earlier than April 24, time TBD",
+    "source_id": "nsf-2026-04-24-amazon-leo-6"
+  },
+  {
+    "launch_date": "2026-04-25T22:21:00",
+    "vehicle": "Soyuz 2.1a",
+    "launch_site": "Site 31/6, Baikonur Cosmodrome, Kazakhstan",
+    "operator": "Roscosmos",
+    "payload_description": "Progress MS-34 \u2014 cargo resupply mission to the ISS",
+    "launch_window": "Window opens at 2221 UTC",
+    "source_id": "nsf-2026-04-25-progress-ms-34"
+  },
+  {
+    "launch_date": "2026-04-28T00:00:00",
+    "vehicle": "Ariane 64",
+    "launch_site": "ELA-4, Guiana Space Centre, French Guiana",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LE-02) \u2014 32 Kuiper broadband internet satellites",
+    "launch_window": "No earlier than April 28, time TBD",
+    "source_id": "nsf-2026-04-28-amazon-leo-le02"
+  },
+  {
+    "launch_date": "2026-04-30T00:00:00",
+    "vehicle": "Falcon Heavy",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "Viasat",
+    "payload_description": "ViaSat-3 F3 \u2014 Ka-band broadband satellite for APAC region (1 Tbps capacity)",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "nsf-2026-04-viasat-3-f3"
+  },
+  {
+    "launch_date": "2026-04-30T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "GPS III SV10 (Hedy Lamarr) \u2014 next-generation GPS navigation satellite",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "nsf-2026-04-gps-iii-sv10"
+  },
+  {
+    "launch_date": "2026-04-30T00:00:00",
+    "vehicle": "Starship-Super Heavy v3",
+    "launch_site": "Pad 2, Starbase, Texas",
+    "operator": "SpaceX",
+    "payload_description": "Starship Flight 12 \u2014 first test flight of Starship v3, first launch from Pad 2 (suborbital)",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "nsf-2026-04-starship-flight-12"
+  },
+  {
+    "launch_date": "2026-04-30T00:00:00",
+    "vehicle": "Vikram-I",
+    "launch_site": "First Launch Pad, Satish Dhawan Space Centre, India",
+    "operator": "Skyroot Aerospace",
+    "payload_description": "Demo flight \u2014 first launch of Vikram-I rocket",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "nsf-2026-04-vikram-i-demo"
+  },
+  {
+    "launch_date": "2026-04-30T00:00:00",
+    "vehicle": "Long March 7A",
+    "launch_site": "LC-201, Wenchang Space Launch Site, China",
+    "operator": "CASC",
+    "payload_description": "Unknown payload",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "nsf-2026-04-long-march-7a"
+  },
+  {
+    "launch_date": "2026-04-30T00:00:00",
+    "vehicle": "ZhuQue-2E",
+    "launch_site": "Site 96A, Jiuquan Satellite Launch Center, China",
+    "operator": "Landspace",
+    "payload_description": "Unknown payload",
+    "launch_window": "No earlier than April 2026, time TBD",
+    "source_id": "nsf-2026-04-zhuque-2e"
+  },
+  {
+    "launch_date": "2026-05-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "NASA",
+    "payload_description": "CRS SpX-34 \u2014 Cargo Dragon resupply mission to the ISS",
+    "launch_window": "No earlier than May 2026, time TBD",
+    "source_id": "nsf-2026-05-crs-spx-34"
+  },
+  {
+    "launch_date": "2026-05-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Synspective",
+    "payload_description": "StriX Launch 9 \u2014 SAR Earth observation satellite (1-3m resolution)",
+    "launch_window": "No earlier than May 2026, time TBD",
+    "source_id": "nsf-2026-05-strix-launch-9"
+  },
+  {
+    "launch_date": "2026-06-01T00:00:00",
+    "vehicle": "Pegasus XL",
+    "launch_site": "Stargazer (air launch), Ronald Reagan Ballistic Missile Defense Test Site, Marshall Islands",
+    "operator": "Katalyst Space Technologies",
+    "payload_description": "Swift Rescue Mission \u2014 robotic spacecraft to raise NASA's Swift Observatory to higher altitude",
+    "launch_window": "No earlier than June 1, time TBD",
+    "source_id": "nsf-2026-06-swift-rescue"
+  },
+  {
+    "launch_date": "2026-06-01T00:00:00",
+    "vehicle": "Atlas V N22",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Boeing",
+    "payload_description": "Starliner-1 \u2014 uncrewed cargo flight to the ISS",
+    "launch_window": "TBD",
+    "source_id": "sfn-2026-tbd-starliner-1"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "SpaceX",
+    "payload_description": "Transporter 17 \u2014 dedicated smallsat rideshare mission to SSO",
+    "launch_window": "No earlier than June 2026, time TBD",
+    "source_id": "nsf-2026-06-transporter-17"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Ariane 62",
+    "launch_site": "ELA-4, Guiana Space Centre, French Guiana",
+    "operator": "EUMETSAT",
+    "payload_description": "MTG-I2 (Meteosat-14) \u2014 third-generation European geostationary weather satellite with imaging and lightning detection",
+    "launch_window": "No earlier than June 2026, time TBD",
+    "source_id": "nsf-2026-06-mtg-i2"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "SpaceLogistics",
+    "payload_description": "MRV-1 \u2014 satellite servicing vehicle with 3 Mission Extension Pods for GEO satellite life extension (Intelsat, Optus)",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-mrv-1"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Transport Layer A \u2014 21 PWSA military data relay satellites with optical inter-satellite links",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tl-a"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Transport Layer D \u2014 21 PWSA military data relay satellites with optical inter-satellite links",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tl-d"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Transport Layer E \u2014 21 PWSA military data relay satellites with optical inter-satellite links",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tl-e"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Tracking Layer C \u2014 PWSA missile tracking and targeting satellites",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tr-c"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Globalstar",
+    "payload_description": "Globalstar Third Gen Sat Mission 1 \u2014 9 third-generation mobile communications satellites",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-globalstar-gen3-1"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Transport Layer F \u2014 21 PWSA military data relay satellites with optical inter-satellite links",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tl-f"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Tracking Layer A \u2014 PWSA missile tracking and targeting satellites",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tr-a"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg Space Force Base, California",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 1 Tracking Layer E \u2014 PWSA missile tracking and targeting satellites",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-t1tr-e"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "H3-30S",
+    "launch_site": "LA-Y2, Tanegashima Space Center, Japan",
+    "operator": "JAXA",
+    "payload_description": "H3-30 test flight \u2014 first flight of H3-30 variant with VEP-5 mass simulator + 7 small satellites (SIGINT, astronomy, debris removal tech demo)",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-h3-30-test"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg Space Force Base, California",
+    "operator": "US Space Force",
+    "payload_description": "VICTUS HAZE Jackal \u2014 tactically responsive space mission, True Anomaly autonomous orbital vehicle for proximity operations",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-victus-haze-jackal"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "AST SpaceMobile",
+    "payload_description": "BlueBird Block 2 FM3-5 (BlueBird 8-10) \u2014 3 space-based cellular broadband satellites",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-bluebird-8-10"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Long March 12B",
+    "launch_site": "Jiuquan Satellite Launch Center, China",
+    "operator": "CASC",
+    "payload_description": "Demo flight \u2014 first launch of Long March 12B rocket",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-long-march-12b-demo"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Long March 10B",
+    "launch_site": "Commercial LC-2, Wenchang Space Launch Site, China",
+    "operator": "CASC",
+    "payload_description": "Demo flight \u2014 first launch of Long March 10B rocket",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-long-march-10b-demo"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Spectrum",
+    "launch_site": "Orbital Launch Pad, Andoya Spaceport, Norway",
+    "operator": "R-Space",
+    "payload_description": "Greenbox-1 & 2 \u2014 in-orbit technology demonstration satellites",
+    "launch_window": "No earlier than Q2 2026, time TBD",
+    "source_id": "nsf-2026-q2-greenbox-1-2"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "Electron/Photon",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "US Space Force",
+    "payload_description": "VICTUS HAZE Puma \u2014 tactically responsive space domain awareness and rendezvous proximity operations demonstration",
+    "launch_window": "No earlier than H1 2026, time TBD",
+    "source_id": "nsf-2026-h1-victus-haze-puma"
+  },
+  {
+    "launch_date": "2026-06-15T00:00:00",
+    "vehicle": "GSLV Mk II",
+    "launch_site": "Second Launch Pad, Satish Dhawan Space Centre, India",
+    "operator": "ISRO",
+    "payload_description": "IDRSS-01 \u2014 Indian Data Relay Satellite for inter-satellite communications and human spaceflight support",
+    "launch_window": "No earlier than H1 2026, time TBD",
+    "source_id": "nsf-2026-h1-idrss-01"
+  },
+  {
+    "launch_date": "2026-06-17T01:40:00",
+    "vehicle": "Soyuz 2.1a",
+    "launch_site": "Site 31/6, Baikonur Cosmodrome, Kazakhstan",
+    "operator": "Roscosmos",
+    "payload_description": "Progress MS-35 \u2014 cargo resupply mission to the ISS",
+    "launch_window": "Window opens at 0140 UTC",
+    "source_id": "nsf-2026-06-17-progress-ms-35"
+  },
+  {
+    "launch_date": "2026-06-25T00:00:00",
+    "vehicle": "Electron/Photon",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Eta Space",
+    "payload_description": "LOXSAT 1 \u2014 NASA-funded cryogenic fluid management technology demonstration satellite",
+    "launch_window": "No earlier than June 25, time TBD",
+    "source_id": "nsf-2026-06-25-loxsat-1"
+  },
+  {
+    "launch_date": "2026-07-14T14:43:00",
+    "vehicle": "Soyuz 2.1a",
+    "launch_site": "Site 31/6, Baikonur Cosmodrome, Kazakhstan",
+    "operator": "Roscosmos",
+    "payload_description": "Soyuz MS-29 \u2014 crewed mission to ISS (Dubrov, Kikina, Menon) for 8-month stay",
+    "launch_window": "Window opens at 1443 UTC",
+    "source_id": "nsf-2026-07-14-soyuz-ms-29"
+  },
+  {
+    "launch_date": "2026-07-15T00:00:00",
+    "vehicle": "Falcon Heavy",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "Astrobotic",
+    "payload_description": "Griffin Mission One \u2014 NASA CLPS lunar lander with Astrolab FLIP rover",
+    "launch_window": "No earlier than July 2026, time TBD",
+    "source_id": "nsf-2026-07-griffin-mission-one"
+  },
+  {
+    "launch_date": "2026-07-15T00:00:00",
+    "vehicle": "H3-24W",
+    "launch_site": "LA-Y2, Tanegashima Space Center, Japan",
+    "operator": "JAXA",
+    "payload_description": "HTV-X 2 \u2014 Japanese cargo resupply mission to the ISS",
+    "launch_window": "No earlier than July 2026, time TBD",
+    "source_id": "nsf-2026-07-htv-x-2"
+  },
+  {
+    "launch_date": "2026-07-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Synspective",
+    "payload_description": "StriX Launch 10 \u2014 SAR Earth observation satellite (1-3m resolution)",
+    "launch_window": "No earlier than July 2026, time TBD",
+    "source_id": "nsf-2026-07-strix-launch-10"
+  },
+  {
+    "launch_date": "2026-08-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "NASA",
+    "payload_description": "Aspera \u2014 NASA astrophysics mission to map ultraviolet signatures of intergalactic medium",
+    "launch_window": "No earlier than August 15, time TBD",
+    "source_id": "nsf-2026-08-15-aspera"
+  },
+  {
+    "launch_date": "2026-08-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "NASA",
+    "payload_description": "CRS SpX-35 \u2014 Cargo Dragon resupply mission to the ISS with 4th pair of iROSA solar arrays",
+    "launch_window": "No earlier than August 2026, time TBD",
+    "source_id": "nsf-2026-08-crs-spx-35"
+  },
+  {
+    "launch_date": "2026-08-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Synspective",
+    "payload_description": "StriX Launch 11 \u2014 SAR Earth observation satellite (1-3m resolution)",
+    "launch_window": "No earlier than August 2026, time TBD",
+    "source_id": "nsf-2026-08-strix-launch-11"
+  },
+  {
+    "launch_date": "2026-09-01T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "ESA",
+    "payload_description": "Sentinel-3C (Copernicus Earth observation) + FLEX (vegetation fluorescence mapper for plant health monitoring)",
+    "launch_window": "No earlier than September 1, time TBD",
+    "source_id": "nsf-2026-09-01-sentinel-3c-flex"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "SES",
+    "payload_description": "O3b mPOWER 11, 12 & 13 \u2014 three second-generation medium Earth orbit communications satellites",
+    "launch_window": "No earlier than September 2026, time TBD",
+    "source_id": "nsf-2026-09-o3b-mpower-11-13"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "RFA One",
+    "launch_site": "SaxaVord Spaceport, Shetland, United Kingdom",
+    "operator": "Rocket Factory Augsburg",
+    "payload_description": "Demo flight \u2014 first launch of RFA One with 7 DLR-coordinated satellites",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-rfa-one-demo"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Astranis",
+    "payload_description": "Astranis Block 3 \u2014 5 MicroGEO broadband satellites (Mexico, Asia, Taiwan, Oman)",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-astranis-block-3"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Ariane 64",
+    "launch_site": "ELA-4, Guiana Space Centre, French Guiana",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LE-03) \u2014 Kuiper broadband internet satellites (first Ariane 6 with upgraded P160C boosters)",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-amazon-leo-le03"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg Space Force Base, California",
+    "operator": "NOAA",
+    "payload_description": "QuickSounder \u2014 next-generation weather observation satellite for NOAA's low Earth orbit program",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-quicksounder"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Rocket 4",
+    "launch_site": "SLC-46, Cape Canaveral Space Force Station, Florida",
+    "operator": "Astra Space",
+    "payload_description": "Demo flight \u2014 first launch of Astra Rocket 4",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-astra-rocket-4-demo"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "KSLV-2 (Nuri)",
+    "launch_site": "LC-2, Naro Space Center, South Korea",
+    "operator": "KASA",
+    "payload_description": "NeonSat-2 to 6 \u2014 5 Earth observation satellites for Korean Peninsula disaster monitoring",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-neonsat-2-6"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "TBD \u2014 Cape Canaveral or Vandenberg, USA",
+    "operator": "Space Development Agency",
+    "payload_description": "FOO Fighter (F2) \u2014 8 prototype fire-control missile defense satellites",
+    "launch_window": "No earlier than Q3 2026, time TBD",
+    "source_id": "nsf-2026-q3-foo-fighter"
+  },
+  {
+    "launch_date": "2026-09-28T00:00:00",
+    "vehicle": "Falcon Heavy",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "NASA",
+    "payload_description": "Nancy Grace Roman Space Telescope \u2014 infrared observatory for dark energy, exoplanets, and galaxy surveys (Hubble-class mirror, 100x wider field of view)",
+    "launch_window": "No earlier than September 28, no later than May 2027, time TBD",
+    "source_id": "nsf-2026-09-28-roman-space-telescope"
+  },
+  {
+    "launch_date": "2026-10-01T00:00:00",
+    "vehicle": "Vulcan VC4L",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Sierra Space",
+    "payload_description": "Dream Chaser 1 \u2014 first flight of Dream Chaser cargo spaceplane to the ISS",
+    "launch_window": "No earlier than Q4 2026",
+    "source_id": "sfn-2026-q4-dream-chaser-1"
+  },
+  {
+    "launch_date": "2026-10-06T00:00:00",
+    "vehicle": "Ariane 62",
+    "launch_site": "ELA-4, Guiana Space Centre, French Guiana",
+    "operator": "EUMETSAT",
+    "payload_description": "METOP-SG B1 \u2014 second-generation European polar-orbiting weather satellite (microwave instruments)",
+    "launch_window": "No earlier than October 6, time TBD",
+    "source_id": "nsf-2026-10-06-metop-sg-b1"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "H3-24L",
+    "launch_site": "LA-Y2, Tanegashima Space Center, Japan",
+    "operator": "JAXA",
+    "payload_description": "Martian Moon eXplorer (MMX) \u2014 sample return mission to Phobos with French/German rover",
+    "launch_window": "No earlier than October 2026, time TBD",
+    "source_id": "nsf-2026-10-mmx"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Synspective",
+    "payload_description": "StriX Launch 12 \u2014 SAR Earth observation satellite (1-3m resolution)",
+    "launch_window": "No earlier than October 2026, time TBD",
+    "source_id": "nsf-2026-10-strix-launch-12"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "TBD \u2014 Cape Canaveral/Vandenberg, USA",
+    "operator": "SpaceX",
+    "payload_description": "Transporter 18 \u2014 dedicated smallsat rideshare mission to SSO",
+    "launch_window": "No earlier than October 2026, time TBD",
+    "source_id": "nsf-2026-10-transporter-18"
+  },
+  {
+    "launch_date": "2026-11-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "KASA",
+    "payload_description": "KOMPSAT-6 (Arirang-6, Korean SAR Earth observation) + PLATiNO-1 (Italian Micro-SAR platform validation) \u2014 final Arianespace Vega launch",
+    "launch_window": "No earlier than November 2026, time TBD",
+    "source_id": "nsf-2026-11-kompsat-6-platino-1"
+  },
+  {
+    "launch_date": "2026-11-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "KASA",
+    "payload_description": "KOMPSAT-7A \u2014 high-resolution Earth observation satellite (30cm panchromatic, 1.2m color, 4m infrared)",
+    "launch_window": "No earlier than November 2026, time TBD",
+    "source_id": "nsf-2026-11-kompsat-7a"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Miura 5",
+    "launch_site": "ELD, Guiana Space Centre, French Guiana",
+    "operator": "PLD Space",
+    "payload_description": "Demo flight \u2014 first launch of Miura 5 rocket",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-miura-5-demo"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Proton-M/Briz-M",
+    "launch_site": "Site 200/39, Baikonur Cosmodrome, Kazakhstan",
+    "operator": "Roscosmos",
+    "payload_description": "Ekspress-AMU4 \u2014 Russian GEO communications satellite (all-domestic components, 15-year lifespan)",
+    "launch_window": "No earlier than December 2026, time TBD",
+    "source_id": "nsf-2026-12-ekspress-amu4"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Soyuz 2.1b/Fregat-M",
+    "launch_site": "Site 1S, Vostochny Cosmodrome, Russia",
+    "operator": "Roscosmos",
+    "payload_description": "Boomerang \u2014 Phobos sample return mission",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-boomerang-phobos"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Terran R",
+    "launch_site": "LC-16, Cape Canaveral Space Force Station, Florida",
+    "operator": "Relativity Space",
+    "payload_description": "VCLS Demo-2R \u2014 NASA Venture Class small satellite launch demonstration (first Terran R flight)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-terran-r-vcls-demo"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Firefly Aerospace",
+    "payload_description": "Blue Ghost Mission 2 \u2014 lunar far side lander + ESA Lunar Pathfinder communications relay satellite",
+    "launch_window": "No earlier than December 2026, time TBD",
+    "source_id": "nsf-2026-12-blue-ghost-2"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Falcon Heavy",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "Astrobotic",
+    "payload_description": "Astrobotic Lunar Mission 3 \u2014 lunar surface lander with science instruments, rovers, and cislunar satellite deployments",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-astrobotic-lunar-3"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Terran R",
+    "launch_site": "LC-16, Cape Canaveral Space Force Station, Florida",
+    "operator": "Intelsat",
+    "payload_description": "Intelsat Mission 1 \u2014 communications satellite (first Intelsat launch on Terran R)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-terran-r-intelsat-1"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "Mahia Peninsula, New Zealand",
+    "operator": "Synspective",
+    "payload_description": "StriX Launch 13 \u2014 SAR Earth observation satellite (1-3m resolution)",
+    "launch_window": "No earlier than December 2026, time TBD",
+    "source_id": "nsf-2026-12-strix-launch-13"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Space Development Agency",
+    "payload_description": "Tranche 2 Transport Layer D \u2014 PWSA military data relay satellites (Alpha variant, York Space Systems)",
+    "launch_window": "No earlier than December 2026, time TBD",
+    "source_id": "nsf-2026-12-t2tl-d"
+  },
+  {
+    "launch_date": "2028-07-05T00:00:00",
+    "vehicle": "Falcon Heavy",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "NASA",
+    "payload_description": "Dragonfly \u2014 rotorcraft mission to explore Saturn's moon Titan",
+    "launch_window": "No earlier than July 5, 2028",
+    "source_id": "sfn-2028-07-05-dragonfly"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Ariane 62",
+    "launch_site": "ELA-4, Guiana Space Centre, French Guiana",
+    "operator": "EU Agency for the Space Programme",
+    "payload_description": "Galileo FOC FM28 & FM31 \u2014 2 European navigation satellites for the Galileo GNSS constellation",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-galileo-l15"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Antares 330",
+    "launch_site": "LP-0A, Wallops Flight Facility, Virginia",
+    "operator": "Northrop Grumman",
+    "payload_description": "CRS NG-25 \u2014 Cygnus cargo resupply mission to the ISS",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-crs-ng-25"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Rocket 4",
+    "launch_site": "SLC-46, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "STP-S29B \u2014 DoD Space Test Program warfighter technology maturation mission",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-stp-s29b"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "MDA",
+    "payload_description": "CHORUS \u2014 2 next-generation Earth observation radar satellites (C-band + X-band SAR, 700km swath)",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-chorus"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Neutron",
+    "launch_site": "Rocket Lab LC-3 (LP-0D), Wallops Flight Facility, Virginia",
+    "operator": "Rocket Lab",
+    "payload_description": "Demo flight \u2014 first launch of Neutron rocket",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-neutron-demo"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "Impulse Space",
+    "payload_description": "VICTUS SURGO \u2014 Mira spacecraft to GTO via Helios kick stage + GEO rideshare delivery demonstration for DIU",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-victus-surgo"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Spectrum",
+    "launch_site": "Orbital Launch Pad, Andoya Spaceport, Norway",
+    "operator": "ESA",
+    "payload_description": "SYNDEO-3 \u2014 ESA IOD/IOV technology demonstration satellite with 10 payloads from 6 European nations",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-syndeo-3"
+  },
+  {
+    "launch_date": "2026-10-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Viasat",
+    "payload_description": "GX-7 (Inmarsat-7 F1) \u2014 Ka-band GEO broadband satellite with dynamic beam steering for mobility market",
+    "launch_window": "No earlier than Q4 2026, time TBD",
+    "source_id": "nsf-2026-q4-gx-7"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "LVM-3",
+    "launch_site": "Second Launch Pad, Satish Dhawan Space Centre, India",
+    "operator": "ISRO",
+    "payload_description": "GaganYaan G1 \u2014 first uncrewed orbital test of India's human-rated capsule with Vyommitra humanoid robot",
+    "launch_window": "No earlier than H2 2026, time TBD",
+    "source_id": "nsf-2026-h2-gaganyaan-g1"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Launch Complex 39A, Kennedy Space Center, Florida",
+    "operator": "Intuitive Machines",
+    "payload_description": "Nova-C IM-3 (Trinity) \u2014 NASA CLPS lunar lander with CADRE rovers to Reiner Gamma + Khon-1 relay satellite + AstroForge Vestri asteroid mission + DOGE-1",
+    "launch_window": "No earlier than H2 2026, time TBD",
+    "source_id": "nsf-2026-h2-nova-c-im3"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Globalstar",
+    "payload_description": "Globalstar Third Gen Sat Mission 2 \u2014 8 third-generation mobile communications satellites",
+    "launch_window": "No earlier than H2 2026, time TBD",
+    "source_id": "nsf-2026-h2-globalstar-gen3-2"
+  },
+  {
+    "launch_date": "2026-09-15T00:00:00",
+    "vehicle": "Eris",
+    "launch_site": "Orbital Launch Pad, Bowen Orbital Spaceport, Australia",
+    "operator": "Gilmour Space Technologies",
+    "payload_description": "TestFlight2 \u2014 second test flight of Eris rocket",
+    "launch_window": "No earlier than H2 2026, time TBD",
+    "source_id": "nsf-2026-h2-eris-testflight-2"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "Arianespace",
+    "payload_description": "SSMS n\u00b010 \u2014 Small Spacecraft Mission Service rideshare of commercial satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ssms-10"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "Arianespace",
+    "payload_description": "SSMS n\u00b006 \u2014 rideshare mission, payload details TBD",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ssms-06"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "Arianespace",
+    "payload_description": "SSMS n\u00b008 \u2014 rideshare mission, payload details TBD",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ssms-08"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "GSLV Mk II",
+    "launch_site": "Second Launch Pad, Satish Dhawan Space Centre, India",
+    "operator": "ISRO",
+    "payload_description": "EOS-05 (GISAT-1A) \u2014 geostationary imaging satellite for rapid disaster response",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-eos-05-gisat-1a"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Ariane 62",
+    "launch_site": "ELA-4, Guiana Space Centre, French Guiana",
+    "operator": "ESA",
+    "payload_description": "EDRS-D \u2014 European Data Relay System GEO satellite for real-time broadband relay from LEO satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-edrs-d"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "Cloud Constellation",
+    "payload_description": "SpaceBelt \u2014 10 space-based cloud storage data center satellites with laser inter-satellite links",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-spacebelt"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "LVM-3",
+    "launch_site": "Second Launch Pad, Satish Dhawan Space Centre, India",
+    "operator": "ISRO",
+    "payload_description": "GaganYaan G2 \u2014 second uncrewed orbital test of India's human-rated capsule",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-gaganyaan-g2"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "LVM-3",
+    "launch_site": "Second Launch Pad, Satish Dhawan Space Centre, India",
+    "operator": "ISRO",
+    "payload_description": "GSAT-32 (GSAT-N3) \u2014 GEO communications satellite replacing GSAT-6",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-gsat-32"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "PSLV-XL",
+    "launch_site": "Satish Dhawan Space Centre, India",
+    "operator": "ISRO",
+    "payload_description": "Cartosat-3B \u2014 high-resolution Earth observation satellite (0.25m panchromatic, 1m multispectral)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-cartosat-3b"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Soyuz 2.1a/Fregat-M",
+    "launch_site": "Site 43/3, Plesetsk Cosmodrome, Russia",
+    "operator": "Russian Aerospace Forces (VKS)",
+    "payload_description": "Meridian-M n\u00b022L \u2014 military/civil telecommunications satellite for Arctic communications",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-meridian-m-22l"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Zephyr",
+    "launch_site": "ELD, Guiana Space Centre, French Guiana",
+    "operator": "Latitude Space",
+    "payload_description": "Demo flight \u2014 first launch of Zephyr rocket (first French orbital launcher since Diamant BP4 in 1975)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-zephyr-demo"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Angara A5/Blok DM-03",
+    "launch_site": "Site 35/1, Plesetsk Cosmodrome, Russia",
+    "operator": "Russian Aerospace Forces (VKS)",
+    "payload_description": "Tundra n\u00b07L (EKS) \u2014 next-generation early warning satellite with emergency nuclear communications payload",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-tundra-7l"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Rokot-M/Briz KM-2",
+    "launch_site": "Site 133/3, Plesetsk Cosmodrome, Russia",
+    "operator": "Russian Aerospace Forces (VKS)",
+    "payload_description": "Demo flight \u2014 first launch of Rokot-M rocket",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-rokot-m-demo"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Epsilon S",
+    "launch_site": "Mu Pad, Uchinoura Space Center, Japan",
+    "operator": "JAXA",
+    "payload_description": "LOTUSat-1 \u2014 Vietnamese Earth observation satellite for disaster and climate monitoring (first Epsilon S launch)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-epsilon-s-lotusat-1"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Long March 5",
+    "launch_site": "LC-101, Wenchang Space Launch Site, China",
+    "operator": "CASC",
+    "payload_description": "Chang'e 7 \u2014 lunar South Pole mission with orbiter, lander, rover, and mini-hopping probe to search for water ice",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-change-7"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Pallas-1",
+    "launch_site": "Jiuquan Satellite Launch Center, China",
+    "operator": "Galactic Energy",
+    "payload_description": "Demo flight \u2014 first launch of Pallas-1 rocket",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-pallas-1-demo"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Atlas V N22",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Boeing",
+    "payload_description": "Starliner-2 \u2014 second operational crewed mission to the ISS",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-starliner-2"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Soyuz 2.1b/Fregat-M",
+    "launch_site": "Site 1S, Vostochny Cosmodrome, Russia",
+    "operator": "Roscosmos",
+    "payload_description": "TELNET n\u00b031 to 60 \u2014 30 Russian telecommunications satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-telnet-31-60"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vulcan VC4S",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "USSF-112 \u2014 classified mission to high-energy orbit",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ussf-112"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Atlas V 551",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LA-08) \u2014 Kuiper broadband internet satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-amazon-leo-la08"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Atlas V 551",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LA-07) \u2014 Kuiper broadband internet satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-amazon-leo-la07"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg Space Force Base, California",
+    "operator": "General Atomics",
+    "payload_description": "OTB-2 \u2014 Orbital Test Bed 2 multi-experiment hosting satellite",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-otb-2"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg Space Force Base, California",
+    "operator": "EOS Data Analytics",
+    "payload_description": "EOS SAR 1 \u2014 synthetic aperture radar Earth observation satellite",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-eos-sar-1"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vulcan VC6L",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo (LV-02) \u2014 Kuiper broadband internet satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-amazon-leo-lv02"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "New Glenn",
+    "launch_site": "Launch Complex 36, Cape Canaveral Space Force Station, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Amazon Leo \u2014 Kuiper broadband internet satellites (first Kuiper launch on New Glenn)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-new-glenn-amazon-leo"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Electron/Curie",
+    "launch_site": "TBD \u2014 Mahia Peninsula, NZ or Wallops Flight Facility, USA",
+    "operator": "HawkEye 360",
+    "payload_description": "HawkEye 360 Flight 3 \u2014 6 RF geospatial analytics satellites",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-hawkeye-360-flight-3"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "USSF-23 \u2014 classified mission",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ussf-23"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "USSF-43 (ROOSTER-4) \u2014 on-orbit technology demonstration platform + classified payloads (GEO)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ussf-43"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "USSF-16 \u2014 classified mission",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-ussf-16"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral Space Force Station, Florida",
+    "operator": "US Space Force",
+    "payload_description": "WGS-11+ \u2014 Wideband Global SATCOM military communications satellite (GEO)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-wgs-11"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-40, Cape Canaveral Space Force Station, Florida",
+    "operator": "NASA",
+    "payload_description": "SpaceX Crew-13 \u2014 13th operational Crew Dragon crew rotation mission to the ISS",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-crew-13"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral / Kennedy Space Center, Florida",
+    "operator": "Northrop Grumman",
+    "payload_description": "CRS NG-22 \u2014 Cygnus cargo resupply mission to the ISS",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-crs-ng-22"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "H3-22S",
+    "launch_site": "LA-Y2, Tanegashima Space Center, Japan",
+    "operator": "Japan Cabinet Office",
+    "payload_description": "Michibiki 7 (QZS-7) \u2014 Japanese quasi-zenith navigation satellite with US Space Force situational awareness payload",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-michibiki-7"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "Italian Space Agency",
+    "payload_description": "IRIDE Mission 1 \u2014 Italian LEO Earth observation constellation (SAR and optical imaging)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-iride-1"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "Vega-C",
+    "launch_site": "ELV pad, Guiana Space Centre, French Guiana",
+    "operator": "Italian Space Agency",
+    "payload_description": "IRIDE Mission 2 \u2014 Italian LEO Earth observation constellation (SAR and optical imaging)",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-iride-2"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "New Glenn",
+    "launch_site": "Launch Complex 36, Cape Canaveral Space Force Station, Florida",
+    "operator": "Blue Origin",
+    "payload_description": "Blue Moon Pathfinder Mission 1 (Endurance) \u2014 first Blue Moon MK1 lunar lander test validating BE-7 engine and HLS technologies",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-blue-moon-pathfinder-1"
+  },
+  {
+    "launch_date": "2026-12-15T00:00:00",
+    "vehicle": "New Glenn",
+    "launch_site": "Launch Complex 36, Cape Canaveral Space Force Station, Florida",
+    "operator": "Firefly Aerospace",
+    "payload_description": "Elytra Mission 1 \u2014 responsive on-orbit deployment demonstration for NRO + rideshare payloads",
+    "launch_window": "No earlier than 2026, time TBD",
+    "source_id": "nsf-2026-elytra-mission-1"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Minotaur IV",
+    "launch_site": "SLC-8, Vandenberg SFB, California",
+    "operator": "US Space Force",
+    "payload_description": "USSF-261S-A (EWS-OD 1) — Missile warning/tracking demonstration satellite for the Evolved Warning System. Sun-synchronous orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-ussf-261s-a-ews-od-1"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "US Space Force",
+    "payload_description": "Tranche 1 Tracking Layer B (T1TR-B) — SDA missile tracking satellites for the Proliferated Warfighter Space Architecture. Low Earth orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-t1tr-b-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "US Space Force",
+    "payload_description": "Tranche 1 Tracking Layer D (T1TR-D) — SDA missile tracking satellites for the Proliferated Warfighter Space Architecture. Low Earth orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-t1tr-d-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "US Space Force",
+    "payload_description": "USSF-114 — Classified US Space Force mission.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-ussf-114-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral SFS, Florida",
+    "operator": "National Reconnaissance Office",
+    "payload_description": "NROL-64 — Classified mission for the National Reconnaissance Office.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-nrol-64-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "National Reconnaissance Office",
+    "payload_description": "NROL-83 — Classified mission for the National Reconnaissance Office.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-nrol-83-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Falcon 9",
+    "launch_site": "Cape Canaveral SFS, Florida",
+    "operator": "US Space Force",
+    "payload_description": "USSF-31 — Classified US Space Force mission.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-ussf-31-falcon-9"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Electron/Curie",
+    "launch_site": "Launch Complex 1, Mahia Peninsula, New Zealand",
+    "operator": "BlackSky",
+    "payload_description": "BlackSky Gen-3 Mission 5 — Next-generation high-revisit Earth observation satellites.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-blacksky-gen3-mission-5"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg SFB, California",
+    "operator": "L3Harris",
+    "payload_description": "L3Harris Launch 1 — Payload details TBD.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-l3harris-launch-1"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg SFB, California",
+    "operator": "L3Harris",
+    "payload_description": "L3Harris Launch 2 — Payload details TBD.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-l3harris-launch-2"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Alpha Block 2",
+    "launch_site": "SLC-2W, Vandenberg SFB, California",
+    "operator": "L3Harris",
+    "payload_description": "L3Harris Launch 3 — Payload details TBD.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-l3harris-launch-3"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Falcon 9",
+    "launch_site": "SLC-4E, Vandenberg SFB, California",
+    "operator": "US Space Force",
+    "payload_description": "Tranche 2 Transport Layer A (T2TL-A) — SDA transport layer satellites for the Proliferated Warfighter Space Architecture. Low Earth orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-t2tl-a-falcon-9"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "US Space Force",
+    "payload_description": "Tranche 2 Transport Layer B (T2TL-B) — SDA transport layer satellites for the Proliferated Warfighter Space Architecture. Low Earth orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nsf-2026-t2tl-b-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral SFS, Florida",
+    "operator": "United Launch Alliance",
+    "payload_description": "NROL-118 (SILENTBARKER 2) — Classified NRO/USAF mission for satellite threat intelligence and space situational awareness. Geosynchronous orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nrol-118-silentbarker-2-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral SFS, Florida",
+    "operator": "United Launch Alliance",
+    "payload_description": "NROL-56 — Classified mission for the National Reconnaissance Office.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nrol-56-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "United Launch Alliance",
+    "payload_description": "NROL-73 — Classified mission for the National Reconnaissance Office.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nrol-73-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-3E, Vandenberg SFB, California",
+    "operator": "United Launch Alliance",
+    "payload_description": "NROL-100 — Classified mission for the National Reconnaissance Office.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nrol-100-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral SFS, Florida",
+    "operator": "United Launch Alliance",
+    "payload_description": "NROL-109 — Classified mission for the National Reconnaissance Office.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "nrol-109-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral SFS, Florida",
+    "operator": "United States Space Force",
+    "payload_description": "USSF-57 (NGG-1 / NG-OPIR-GEO 1) — First of two Next Generation GEO geostationary satellites for improved strategic missile warning capabilities. Replaces current SBIRS satellites. Built by Lockheed Martin. Geostationary transfer orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "ussf-57-ngg-1-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Vulcan Centaur",
+    "launch_site": "SLC-41, Cape Canaveral SFS, Florida",
+    "operator": "United States Space Force",
+    "payload_description": "STP-5 (SIRI-3 & PUMA) — Dual-payload Space Test Program mission. SIRI-3: gamma ray detection technology prototype for U.S. Naval Research Laboratory. PUMA: modular spacecraft propulsion demonstration for Air Force Research Laboratory. Low Earth orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "stp-5-siri-3-puma-vulcan-centaur"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Tianlong 3",
+    "launch_site": "Commercial LC-2, Wenchang Space Launch Site, China",
+    "operator": "Space Pioneer",
+    "payload_description": "Tianlong 3 second flight. Details TBD.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "space-pioneer-tianlong-3-flight-2"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "Tianlong 3",
+    "launch_site": "Jiuquan Satellite Launch Center, China",
+    "operator": "Space Pioneer",
+    "payload_description": "Tianlong 3 third flight. Details TBD.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "space-pioneer-tianlong-3-flight-3"
+  },
+  {
+    "launch_date": null,
+    "vehicle": "New Glenn",
+    "launch_site": "LC-36, Cape Canaveral SFS, Florida",
+    "operator": "Amazon Kuiper",
+    "payload_description": "Project Kuiper — Batch deployment of Amazon's broadband internet constellation. 3,236 satellites planned across three orbital layers at 590, 610, and 630 km altitude. Low Earth orbit.",
+    "launch_window": "No earlier than 2026",
+    "source_id": "amazon-kuiper-new-glenn-2026"
+  }
+]
