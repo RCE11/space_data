@@ -13,6 +13,7 @@ Usage:
     python -m src.admin flag <norad_id> <note>
     python -m src.admin flags list
     python -m src.admin flags resolve <norad_id>
+    python -m src.admin usage [--days 7] [--user <owner>]
 """
 
 import secrets
@@ -25,7 +26,7 @@ from sqlalchemy import func, select, update
 load_dotenv()
 
 from src.db.connection import SessionLocal
-from src.db.models import ApiKey, Launch, Operator, Orbit, Satellite
+from src.db.models import ApiKey, Launch, Operator, Orbit, RequestLog, Satellite
 
 
 def get_db():
@@ -457,6 +458,82 @@ def cmd_flags(args):
 
 
 # ---------------------------------------------------------------------------
+# usage
+# ---------------------------------------------------------------------------
+def cmd_usage(args):
+    """Show API usage stats from request log."""
+    days = 7
+    user_filter = None
+
+    # Parse args
+    i = 0
+    while i < len(args):
+        if args[i] == "--days" and i + 1 < len(args):
+            days = int(args[i + 1])
+            i += 2
+        elif args[i] == "--user" and i + 1 < len(args):
+            user_filter = args[i + 1]
+            i += 2
+        else:
+            i += 1
+
+    db = get_db()
+    since = datetime.utcnow() - __import__("datetime").timedelta(days=days)
+
+    base = select(RequestLog).where(RequestLog.created_at >= since)
+    if user_filter:
+        base = base.where(RequestLog.owner.ilike(f"%{user_filter}%"))
+
+    logs = db.execute(base.order_by(RequestLog.created_at.desc())).scalars().all()
+
+    if not logs:
+        print(f"No requests in the last {days} days.")
+        db.close()
+        return
+
+    # Summary by user
+    print(f"=== API Usage (last {days} days) ===\n")
+
+    user_counts = {}
+    endpoint_counts = {}
+    for log in logs:
+        owner = log.owner or "unknown"
+        user_counts[owner] = user_counts.get(owner, 0) + 1
+        endpoint_counts[log.endpoint] = endpoint_counts.get(log.endpoint, 0) + 1
+
+    print("Requests by user:")
+    print(f"  {'User':<25} {'Tier':<12} {'Requests'}")
+    print(f"  {'-'*25} {'-'*12} {'-'*8}")
+    # Get tier for each user
+    user_tiers = {}
+    for log in logs:
+        if log.owner:
+            user_tiers[log.owner] = log.tier or "—"
+    for owner, count in sorted(user_counts.items(), key=lambda x: -x[1]):
+        tier = user_tiers.get(owner, "—")
+        print(f"  {owner:<25} {tier:<12} {count}")
+
+    print(f"\nRequests by endpoint:")
+    print(f"  {'Endpoint':<40} {'Requests'}")
+    print(f"  {'-'*40} {'-'*8}")
+    for endpoint, count in sorted(endpoint_counts.items(), key=lambda x: -x[1]):
+        print(f"  {endpoint:<40} {count}")
+
+    # Recent requests detail
+    print(f"\nRecent requests (last 20):")
+    print(f"  {'Time':<20} {'User':<20} {'Endpoint':<30} {'Params'}")
+    print(f"  {'-'*20} {'-'*20} {'-'*30} {'-'*30}")
+    for log in logs[:20]:
+        ts = log.created_at.strftime("%Y-%m-%d %H:%M") if log.created_at else "—"
+        owner = (log.owner or "—")[:19]
+        params = (log.query_params or "—")[:30]
+        print(f"  {ts:<20} {owner:<20} {log.endpoint:<30} {params}")
+
+    print(f"\nTotal: {len(logs)} requests from {len(user_counts)} users")
+    db.close()
+
+
+# ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
 COMMANDS = {
@@ -467,6 +544,7 @@ COMMANDS = {
     "constellation": cmd_constellation,
     "flag": cmd_flag,
     "flags": cmd_flags,
+    "usage": cmd_usage,
 }
 
 

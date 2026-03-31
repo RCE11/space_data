@@ -108,3 +108,16 @@ class ApiKey(Base):
     tier = Column(String(50), nullable=False, default="free")  # free, individual, team
     is_active = Column(Boolean, nullable=False, default=True)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class RequestLog(Base):
+    __tablename__ = "request_log"
+
+    id = Column(Integer, primary_key=True)
+    api_key_id = Column(Integer, ForeignKey("api_keys.id"))
+    owner = Column(String(255))
+    tier = Column(String(50))
+    endpoint = Column(String(255), nullable=False)
+    query_params = Column(Text)
+    status_code = Column(Integer)
+    created_at = Column(DateTime, default=datetime.utcnow, index=True)
