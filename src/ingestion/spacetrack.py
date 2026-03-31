@@ -60,6 +60,15 @@ class SpaceTrackClient:
 
         self._rate_limit()
         resp = self.client.get(url)
+
+        # Session may have expired — re-authenticate and retry once
+        if resp.status_code == 401:
+            print("Session expired, re-authenticating...")
+            self.authenticated = False
+            self.login()
+            self._rate_limit()
+            resp = self.client.get(url)
+
         resp.raise_for_status()
         return resp.json()
 
