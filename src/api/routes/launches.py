@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, Query
+from sqlalchemy import or_
 from sqlalchemy.orm import Session, joinedload
 
 from src.api.rate_limit import rate_limit
@@ -21,12 +22,12 @@ def get_upcoming_launches(
     now = datetime.now(timezone.utc)
     base = db.query(Launch).filter(
         Launch.status == "scheduled",
-        Launch.launch_date > now,
+        or_(Launch.launch_date > now, Launch.launch_date.is_(None)),
     )
     total = base.count()
     results = (
         base.options(joinedload(Launch.operator))
-        .order_by(Launch.launch_date.asc())
+        .order_by(Launch.launch_date.asc().nullslast())
         .offset(offset)
         .limit(limit)
         .all()

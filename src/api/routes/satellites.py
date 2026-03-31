@@ -12,7 +12,7 @@ router = APIRouter()
 @router.get("/by-operator", response_model=PaginatedSatellites)
 def get_satellites_by_operator(
     operator: str = Query(description="Operator name (partial match)"),
-    object_type: str | None = Query(default=None, description="PAYLOAD, DEBRIS, ROCKET BODY, or UNKNOWN"),
+    object_type: str | None = Query(default="PAYLOAD", description="PAYLOAD, DEBRIS, ROCKET BODY, UNKNOWN, or null for all"),
     constellation: str | None = Query(default=None, description="Filter by constellation name (partial match)"),
     limit: int = Query(default=50, ge=1, le=200),
     offset: int = Query(default=0, ge=0),
@@ -48,7 +48,7 @@ def get_satellites_by_operator(
 def get_satellites_by_orbit(
     orbit_class: str = Query(description="Orbit classification: LEO, MEO, GEO, HEO, or SSO"),
     operator: str | None = Query(default=None, description="Filter by operator name (partial match)"),
-    object_type: str | None = Query(default=None, description="PAYLOAD, DEBRIS, ROCKET BODY, or UNKNOWN"),
+    object_type: str | None = Query(default="PAYLOAD", description="PAYLOAD, DEBRIS, ROCKET BODY, UNKNOWN, or null for all"),
     constellation: str | None = Query(default=None, description="Filter by constellation name (partial match)"),
     limit: int = Query(default=50, ge=1, le=200),
     offset: int = Query(default=0, ge=0),
@@ -86,7 +86,7 @@ def get_satellites_by_orbit(
 def get_satellites_by_constellation(
     constellation: str = Query(description="Constellation name (partial match, e.g. 'Starlink', 'OneWeb')"),
     operator: str | None = Query(default=None, description="Filter by operator name (partial match)"),
-    object_type: str | None = Query(default=None, description="PAYLOAD, DEBRIS, ROCKET BODY, or UNKNOWN"),
+    object_type: str | None = Query(default="PAYLOAD", description="PAYLOAD, DEBRIS, ROCKET BODY, UNKNOWN, or null for all"),
     limit: int = Query(default=50, ge=1, le=200),
     offset: int = Query(default=0, ge=0),
     db: Session = Depends(get_db),

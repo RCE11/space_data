@@ -16,6 +16,70 @@ from src.db.models import Launch, Operator
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "upcoming_launches.json"
 
+# Metadata for operators created by the upcoming launches loader.
+# Keeps operator records useful even when they don't come from Space-Track.
+OPERATOR_METADATA = {
+    "NASA": ("Government", "US"),
+    "United Launch Alliance": ("Commercial", "US"),
+    "United States Space Force": ("Military", "US"),
+    "US Space Force": ("Military", "US"),
+    "National Reconnaissance Office": ("Military", "US"),
+    "Space Development Agency": ("Military", "US"),
+    "L3Harris": ("Commercial", "US"),
+    "BlackSky": ("Commercial", "US"),
+    "Blue Origin": ("Commercial", "US"),
+    "Boeing": ("Commercial", "US"),
+    "SpaceX": ("Commercial", "US"),
+    "Amazon Kuiper": ("Commercial", "US"),
+    "Northrop Grumman": ("Commercial", "US"),
+    "Impulse Space": ("Commercial", "US"),
+    "Sierra Space": ("Commercial", "US"),
+    "Firefly Aerospace": ("Commercial", "US"),
+    "Relativity Space": ("Commercial", "US"),
+    "Astra Space": ("Commercial", "US"),
+    "Rocket Lab": ("Commercial", "NZ"),
+    "ISRO": ("Government", "IN"),
+    "JAXA": ("Government", "JP"),
+    "Japan Cabinet Office": ("Government", "JP"),
+    "KASA": ("Government", "KR"),
+    "Arianespace": ("Commercial", "FR"),
+    "Italian Space Agency": ("Government", "IT"),
+    "EU Agency for the Space Programme": ("Government", "EU"),
+    "ESA": ("Government", "EU"),
+    "EUMETSAT": ("Government", "EU"),
+    "Roscosmos": ("Government", "RU"),
+    "Russian Aerospace Forces (VKS)": ("Military", "RU"),
+    "CASC": ("Government", "CN"),
+    "Space Pioneer": ("Commercial", "CN"),
+    "Landspace": ("Commercial", "CN"),
+    "Galactic Energy": ("Commercial", "CN"),
+    "Viasat": ("Commercial", "US"),
+    "MDA": ("Commercial", "CA"),
+    "Isar Aerospace": ("Commercial", "DE"),
+    "PLD Space": ("Commercial", "ES"),
+    "Rocket Factory Augsburg": ("Commercial", "DE"),
+    "Latitude Space": ("Commercial", "FR"),
+    "Gilmour Space Technologies": ("Commercial", "AU"),
+    "Skyroot Aerospace": ("Commercial", "IN"),
+    "HawkEye 360": ("Commercial", "US"),
+    "SpaceLogistics": ("Commercial", "US"),
+    "Astrobotic": ("Commercial", "US"),
+    "Intuitive Machines": ("Commercial", "US"),
+    "Eta Space": ("Commercial", "US"),
+    "Globalstar": ("Commercial", "US"),
+    "AST SpaceMobile": ("Commercial", "US"),
+    "Astranis": ("Commercial", "US"),
+    "General Atomics": ("Commercial", "US"),
+    "EOS Data Analytics": ("Commercial", "US"),
+    "Cloud Constellation": ("Commercial", "US"),
+    "Katalyst Space Technologies": ("Commercial", "US"),
+    "Synspective": ("Commercial", "JP"),
+    "R-Space": ("Commercial", "JP"),
+    "Lynk Global Inc.": ("Commercial", "US"),
+    "NOAA": ("Government", "US"),
+    "Stoke Space": ("Commercial", "US"),
+}
+
 
 def load_upcoming_launches():
     db = SessionLocal()
@@ -36,7 +100,12 @@ def load_upcoming_launches():
             # Find or create operator
             op_name = entry["operator"]
             if op_name not in operators:
-                op = Operator(name=op_name)
+                meta = OPERATOR_METADATA.get(op_name, (None, None))
+                op = Operator(
+                    name=op_name,
+                    operator_type=meta[0],
+                    country=meta[1],
+                )
                 db.add(op)
                 db.flush()
                 operators[op_name] = op
@@ -91,8 +160,37 @@ def load_upcoming_launches():
         db.close()
 
 
+def backfill_operator_metadata():
+    """Fill in country and operator_type for operators missing metadata."""
+    db = SessionLocal()
+    updated = 0
+    try:
+        operators = db.execute(select(Operator)).scalars().all()
+        for op in operators:
+            meta = OPERATOR_METADATA.get(op.name)
+            if not meta:
+                continue
+            changed = False
+            if not op.operator_type and meta[0]:
+                op.operator_type = meta[0]
+                changed = True
+            if not op.country and meta[1]:
+                op.country = meta[1]
+                changed = True
+            if changed:
+                updated += 1
+        db.commit()
+        print(f"  Backfilled metadata for {updated} operators.")
+    except Exception:
+        db.rollback()
+        raise
+    finally:
+        db.close()
+
+
 def run():
     load_upcoming_launches()
+    backfill_operator_metadata()
     print("Upcoming launch ingestion complete.")
 
 

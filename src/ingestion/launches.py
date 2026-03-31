@@ -18,6 +18,37 @@ from src.ingestion.spacetrack import SpaceTrackClient
 
 BATCH_SIZE = 500
 
+# Space-Track SATCAT site codes → human-readable names.
+SITE_NAMES = {
+    "PKMTR": "Plesetsk Cosmodrome, Russia",
+    "TTMTR": "Tyuratam/Baikonur Cosmodrome, Kazakhstan",
+    "AFETR": "Cape Canaveral, Florida",
+    "AFWTR": "Vandenberg SFB, California",
+    "FRGUI": "Guiana Space Centre, French Guiana",
+    "JSC": "Jiuquan Satellite Launch Center, China",
+    "XSC": "Xichang Satellite Launch Center, China",
+    "TSC": "Tanegashima Space Center, Japan",
+    "TNSTA": "Baikonur Cosmodrome, Kazakhstan",
+    "SRI": "Satish Dhawan Space Centre, India",
+    "KYMTR": "Kapustin Yar, Russia",
+    "RLLC": "Rocket Lab LC-1, Mahia Peninsula, New Zealand",
+    "WSC": "Wenchang Space Launch Site, China",
+    "WLPIS": "Wallops Flight Facility, Virginia",
+    "SEAL": "Sea Launch Platform, Pacific Ocean",
+    "OREN": "Dombarovsky/Yasny Launch Base, Russia",
+    "KODAK": "Pacific Spaceport Complex, Kodiak Island, Alaska",
+    "SNMLP": "Palmachim Airbase, Israel",
+    "SMTS": "Semnan Spaceport, Iran",
+    "KWAJ": "Kwajalein Atoll, Marshall Islands",
+    "YUN": "Naro Space Center, South Korea",
+    "KSCUT": "Uchinoura Space Center, Japan",
+    "DLS": "Jiuquan Satellite Launch Center, China",
+    "SVOB": "Svobodny Cosmodrome, Russia",
+    "HGSTR": "Hammaguir, Algeria",
+    "WOMRA": "Woomera, Australia",
+    "TAISC": "Taiyuan Satellite Launch Center, China",
+}
+
 
 def _designator_prefix(intl_des: str) -> str | None:
     """Extract launch identifier from international designator.
@@ -57,9 +88,10 @@ def fetch_launch_data(client: SpaceTrackClient) -> dict[str, dict]:
         if not prefix:
             continue
 
+        raw_site = rec.get("SITE")
         launches[prefix] = {
             "launch_date": _parse_date(rec.get("LAUNCH")),
-            "launch_site": rec.get("SITE"),
+            "launch_site": SITE_NAMES.get(raw_site, raw_site),
             "payload_name": rec.get("SATNAME"),
             "country": rec.get("COUNTRY"),
         }
