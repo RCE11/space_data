@@ -16,6 +16,7 @@ Usage:
     python -m src.admin usage [--days 7] [--user <owner>]
 """
 
+import hashlib
 import secrets
 import sys
 from datetime import datetime
@@ -102,10 +103,11 @@ def cmd_keys(args):
             print("No API keys found.")
             db.close()
             return
-        print(f"{'Key (first 12)':<16} {'Owner':<20} {'Tier':<12} {'Active':<8} {'Created'}")
+        print(f"{'Prefix':<16} {'Owner':<20} {'Tier':<12} {'Active':<8} {'Created'}")
         print("-" * 80)
         for k in keys:
-            print(f"{k.key[:12]}...   {k.owner:<20} {k.tier:<12} "
+            prefix = k.key_prefix or "???"
+            print(f"{prefix}...      {k.owner:<20} {k.tier:<12} "
                   f"{'yes' if k.is_active else 'no':<8} {k.created_at}")
 
     elif action == "create":
@@ -124,12 +126,14 @@ def cmd_keys(args):
             db.close()
             return
 
-        key = secrets.token_hex(32)
-        api_key = ApiKey(key=key, owner=owner, tier=tier)
+        raw_key = secrets.token_hex(32)
+        key_hash = hashlib.sha256(raw_key.encode()).hexdigest()
+        key_prefix = raw_key[:12]
+        api_key = ApiKey(key_hash=key_hash, key_prefix=key_prefix, owner=owner, tier=tier)
         db.add(api_key)
         db.commit()
         print(f"Created API key for {owner} (tier: {tier})")
-        print(f"Key: {key}")
+        print(f"Key: {raw_key}")
         print("\nStore this key securely — it cannot be retrieved later.")
 
     elif action == "deactivate":
@@ -139,7 +143,9 @@ def cmd_keys(args):
             return
         prefix = args[1]
         key = db.execute(
-            select(ApiKey).where(ApiKey.key.startswith(prefix), ApiKey.is_active.is_(True))
+            select(ApiKey).where(
+                ApiKey.key_prefix.startswith(prefix), ApiKey.is_active.is_(True)
+            )
         ).scalar()
         if not key:
             print(f"No active key found starting with '{prefix}'")
@@ -147,7 +153,7 @@ def cmd_keys(args):
             return
         key.is_active = False
         db.commit()
-        print(f"Deactivated key {key.key[:12]}... (owner: {key.owner})")
+        print(f"Deactivated key {key.key_prefix}... (owner: {key.owner})")
 
     else:
         print(f"Unknown keys action: {action}")

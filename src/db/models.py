@@ -103,7 +103,8 @@ class ApiKey(Base):
     __tablename__ = "api_keys"
 
     id = Column(Integer, primary_key=True)
-    key = Column(String(64), nullable=False, unique=True, index=True)
+    key_hash = Column(String(64), nullable=False, unique=True, index=True)
+    key_prefix = Column(String(12))
     owner = Column(String(255), nullable=False)
     tier = Column(String(50), nullable=False, default="free")  # free, individual, team
     is_active = Column(Boolean, nullable=False, default=True)

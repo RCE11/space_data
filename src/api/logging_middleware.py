@@ -5,6 +5,8 @@ The log write happens after the response is sent so it doesn't
 add latency to the request.
 """
 
+import hashlib
+
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from starlette.responses import Response
@@ -31,9 +33,10 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
 
         try:
             db = SessionLocal()
+            key_hash = hashlib.sha256(api_key_str.encode()).hexdigest()
             key_record = (
                 db.query(ApiKey)
-                .filter(ApiKey.key == api_key_str)
+                .filter(ApiKey.key_hash == key_hash)
                 .first()
             )
             log_entry = RequestLog(

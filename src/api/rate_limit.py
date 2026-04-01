@@ -21,11 +21,12 @@ _request_log: dict[str, list[float]] = defaultdict(list)
 def rate_limit(api_key: ApiKey = Depends(get_api_key)) -> ApiKey:
     now = time.monotonic()
     window_start = now - WINDOW_SECONDS
-    log = _request_log[api_key.key]
+    rate_key = str(api_key.id)
+    log = _request_log[rate_key]
 
     # Drop timestamps outside the window
-    _request_log[api_key.key] = [t for t in log if t > window_start]
-    log = _request_log[api_key.key]
+    _request_log[rate_key] = [t for t in log if t > window_start]
+    log = _request_log[rate_key]
 
     max_requests = TIER_LIMITS.get(api_key.tier, DEFAULT_LIMIT)
     if len(log) >= max_requests:
