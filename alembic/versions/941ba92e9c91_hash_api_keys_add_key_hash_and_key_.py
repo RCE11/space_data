@@ -42,7 +42,6 @@ def upgrade() -> None:
 
     # Drop the plaintext key column and its index
     op.drop_index("ix_api_keys_key", table_name="api_keys")
-    op.drop_constraint("uq_api_keys_key", "api_keys", type_="unique")
     op.drop_column("api_keys", "key")
 
 
